@@ -1,0 +1,183 @@
+<!--Copyright (C) 2022-2023 DaGoose-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="DaGoose" />
+        <title>EncodeGUI - Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index" >
+						<img src="../assets/egui.png" height="40" class="d-inline-block align-middle mr-2" alt="...">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link" href="../index">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../downloads">Downloads</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation">Docs</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLDv6vnHjQp9c4J3hKlTn3T1DAAijtrDfh">Tutorials</a></li>
+							<li class="nav-item"><a class="nav-link" href="../demo">Demos</a></li>
+							<li class="nav-item"><a class="nav-link" href="../support">Support</a></li>
+							<li class="nav-item"><a class="nav-link" href="../donate">Donate ❤️</a></li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+			<div class="container px-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-9">
+					<div class="p-3 bg-light" style="width: 265px;">
+						<a href="documentation" class="d-flex pb-3 mb-3 link-dark text-decoration-none border-bottom justify-content-center">
+					<span class="fs-5 fw-semibold"><strong>Documentation</strong></span>
+					</a>
+					<ul class="list-unstyled ps-0">
+					<li class="mb-1"><strong>General</strong></li>
+					<li class="mb-1">
+						<a href="requirements">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							System requirements
+						</button>
+						</a>
+						<a href="install">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							Installation
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>EncodeGUI (v1.1.7)</strong></li>
+					<li class="mb-1">
+						<a href="usage">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#video-collapse" aria-expanded="false">
+						Video Encoding
+						</button>
+						<div class="collapse" id="video-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="video" class="link-dark rounded">General</a></li>
+							<li><a href="avc" class="link-dark rounded">AVC</a></li>
+							<li><a href="hevc" class="link-dark rounded">HEVC</a></li>
+							<li><a href="prores" class="link-dark rounded">ProRes</a></li>
+							<li><a href="theora" class="link-dark rounded">Theora</a></li>
+							<li><a href="vp9" class="link-dark rounded">VP9</a></li>
+							<li><a href="av1" class="link-dark rounded">AV1</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+						Other Encoding
+						</button>
+						<div class="collapse" id="dashboard-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="audio" class="link-dark rounded">Audio</a></li>
+							<li><a href="subtitle" class="link-dark rounded">Subtitles</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+						Filters
+						</button>
+						<div class="collapse" id="orders-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="interpolation" class="link-dark rounded">Interpolation</a></li>
+							<li><a href="upscale" class="link-dark rounded">Upscaling</a></li>
+							<li><a href="colors" class="link-dark rounded">Color Converter</a></li>
+							<li><a href="antialias" class="link-dark rounded">Anti Aliasing</a></li>
+							<li><a href="ffmpeg" class="link-dark rounded">FFMpeg</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/EncodeGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>FrameGUI (v2.2.0)</strong></li>
+					<li class="mb-1">
+						<a href="fgui">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/FrameGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+						<a href="../support">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Troubleshooting
+						</button>
+						</a>
+					</li>
+					</ul>
+					</div>
+				</div>
+			<div class="col-lg-8 col-sm-12 col-md-12 col-12">
+					<h1 class="text-center fw-bolder my-5">Installation Guide</h1>
+					<p class="fw-normal text-black mb-0">This section will cover the installation for EncodeGUI and FrameGUI. FrameGUI v2.2.0 and newer is supported on Windows OS (Windows 10 newer) and macOS. As of v1.1.7, <strong>EncodeGUI is only supported on Windows OS (Windows 10 or newer).</strong> No Linux distro is currently supported yet.<br />
+						This guide assumes that you have already downloaded either the EncodeGUI or FrameGUI setup file on the <a href="../downloads.html">downloads</a> page.<br /><br /><br /><br />
+						<h4 class="text-center"><strong>Accept the License Agreement</strong></h4>
+						<p class="fw-normal text-center text-black mb-0"><img src="refs/install1.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 450;" alt="..."></img></p>
+						Please read the contents of the license agreement and click the <code>I accept the agreement</code> bubble to continue the setup process. A copy of this license is available <a href="../privacy-terms.html">here</a>. Click the <code>Next</code> button.<br /><br /><br /><br />
+						<h4 class="text-center"><strong>Creating a Desktop Shortcut</strong></h4>
+						<p class="fw-normal text-center text-black mb-0"><img src="refs/install2.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 450;" alt="..."></img></p>
+						Next, you'll want to decide whether or not you want an EncodeGUI shortcut icon on your desktop. Check or uncheck the checkbox and then click the <code>Next</code> button.<br /><br /><br /><br />
+						<h4 class="text-center"><strong>Confirm Installation</strong></h4>
+						<p class="fw-normal text-center text-black mb-0"><img src="refs/install3.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 450;" alt="..."></img></p>
+						This page simply confirms the installation details. Click the <code>Install</code> button to continue.<br /><br /><br /><br /><br />
+						<h4 class="text-center"><strong>Download Dependencies (If Applicable)</strong></h4>
+						<p class="fw-normal text-center text-black mb-0"><img src="refs/install4.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 450;" alt="..."></img></p>
+						This page displays the download information for the additional required dependencies in EncodeGUI. Please wait while this process finishes. The speed of the download largely depends on your internet speeds and the current server load. If you do not see this page, then your system already has the required dependencies for EncodeGUI.<br /><br />
+						<div class="alert alert-warning" role="alert">
+							<strong>Note:</strong> If you get an error while attempting to download the dependencies, please wait and try again a few hours later and check your local network configuration. After that, if the error still persists, please <a href="https://discord.gg/PmcbXJVBNu">contact DaGoose</a>.
+						</div><br /><br /><br />
+						<h4 class="text-center"><strong>Installing the Downloaded Dependencies</strong></h4>
+						<p class="fw-normal text-center text-black mb-0"><img src="refs/install5.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 450;" alt="..."></img></p>
+						This page will appear after the download finishes. Please wait as the contents that were just downloaded are being extracted and installed to the EncodeGUI directory. This process could take several minutes so please be patient. Once again, if you do not see this page, then your system already has the required dependencies for EncodeGUI.<br /><br /><br /><br />
+						<h4 class="text-center"><strong>Finishing Up</strong></h4>
+						<p class="fw-normal text-center text-black mb-0"><img src="refs/install6.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 450;" alt="..."></img></p>
+						This page will appear once the EncodeGUI installation has completed. Click the <code>Finish</code> button and, if specified, EncodeGUI will open automatically. The installation is now complete.<br /><br /><br />
+					</p>
+				</div>
+			</div>
+        </main>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; <a class="link-light" href="https://dagooseyt.com">DaGoose</a> 2022-2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="privacy-terms">Privacy / Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="support">Support</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

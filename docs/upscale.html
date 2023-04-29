@@ -1,0 +1,195 @@
+<!--Copyright (C) 2022-2023 DaGoose-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="DaGoose" />
+        <title>EncodeGUI - Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index" >
+						<img src="../assets/egui.png" height="40" class="d-inline-block align-middle mr-2" alt="...">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link" href="../index">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../downloads">Downloads</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation">Docs</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLDv6vnHjQp9c4J3hKlTn3T1DAAijtrDfh">Tutorials</a></li>
+							<li class="nav-item"><a class="nav-link" href="../demo">Demos</a></li>
+							<li class="nav-item"><a class="nav-link" href="../support">Support</a></li>
+							<li class="nav-item"><a class="nav-link" href="../donate">Donate ❤️</a></li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+			<div class="container px-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-9">
+					<div class="p-3 bg-light" style="width: 265px;">
+						<a href="documentation" class="d-flex pb-3 mb-3 link-dark text-decoration-none border-bottom justify-content-center">
+					<span class="fs-5 fw-semibold"><strong>Documentation</strong></span>
+					</a>
+					<ul class="list-unstyled ps-0">
+					<li class="mb-1"><strong>General</strong></li>
+					<li class="mb-1">
+						<a href="requirements">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							System requirements
+						</button>
+						</a>
+						<a href="install">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							Installation
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>EncodeGUI (v1.1.7)</strong></li>
+					<li class="mb-1">
+						<a href="usage">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#video-collapse" aria-expanded="false">
+						Video Encoding
+						</button>
+						<div class="collapse" id="video-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="video" class="link-dark rounded">General</a></li>
+							<li><a href="avc" class="link-dark rounded">AVC</a></li>
+							<li><a href="hevc" class="link-dark rounded">HEVC</a></li>
+							<li><a href="prores" class="link-dark rounded">ProRes</a></li>
+							<li><a href="theora" class="link-dark rounded">Theora</a></li>
+							<li><a href="vp9" class="link-dark rounded">VP9</a></li>
+							<li><a href="av1" class="link-dark rounded">AV1</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+						Other Encoding
+						</button>
+						<div class="collapse" id="dashboard-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="audio" class="link-dark rounded">Audio</a></li>
+							<li><a href="subtitle" class="link-dark rounded">Subtitles</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+						Filters
+						</button>
+						<div class="collapse show" id="orders-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="interpolation" class="link-dark rounded">Interpolation</a></li>
+							<li><a href="upscale" class="link-dark rounded">Upscaling</a></li>
+							<li><a href="colors" class="link-dark rounded">Color Converter</a></li>
+							<li><a href="antialias" class="link-dark rounded">Anti Aliasing</a></li>
+							<li><a href="ffmpeg" class="link-dark rounded">FFMpeg</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/EncodeGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>FrameGUI (v2.2.0)</strong></li>
+					<li class="mb-1">
+						<a href="fgui">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/FrameGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+						<a href="../support">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Troubleshooting
+						</button>
+						</a>
+					</li>
+					</ul>
+					</div>
+				</div>
+            <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+                <h1 class="fw-bolder text-center my-5">Resolution Upscaling & DeNoise</h1>
+				<div class="my-5" style="position: relative; display: block; padding: 0; overflow: hidden; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/g3QQVy9y318" style="height: 100%; width: 100%; position: absolute;"></iframe><br /></div>
+				<p class="fw-normal text-black mb-0">Resolution upscaling allows you to upscale videos from, say, 1080p to 4K. Upscaling videos is provided using either Waifu2x or SRMD. Both use NCNN as the graphics backend which is currently the fastest implementation for them. In Waifu2x, you can also configure the settings to DeNoise only without upscaling.</p><br /><br />
+				<h3 class="fw-bolder text-center my-3">How to Use</h3><br />
+				<h5 class="text-center"><strong>Selecting a Tool</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/toolupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				<strong>Waifu2x (NCNN):</strong><br /> Provides up to 2x upscaling, hence the name. It’s one of the fastest AI resolution upscaling tools there is currently. DeNoising is also built into Waifu2x which you can use simultaneously while upscaling or as a stand-alone feature.<br /><br />
+    			<strong>SRMD (NCNN):</strong><br /> This is an alternative upscaling option to Waifu2x which allows up to 4x upscaling, but the rendering speed can be about 2x slower than Waifu2x. DeNoising can also be used simultaneously with SRMD.<br /><br /><br />
+				<h5 class="text-center"><strong>Selecting a GPU Device</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/gpuupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				Allows you to select a GPU device to use for upscaling. Select a Vulkan capable GPU in the list.<br /><br />
+				<div class="alert alert-warning" role="alert"><strong>Note:</strong> Please refrain from asking the developers if your GPU is Vulkan capable - we most likely don't know either. Please research on your own as the answer can be found easily as a simple web search.</div><br /><br />
+				<h5 class="text-center"><strong>Selecting GPU Threads</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/threadsupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				Here, you can set the number of GPU threads for the upscaling process to use. An all around good value to use is <code>2</code> threads. <strong>More threads will not make the process faster and can throw errors if too many threads are used</strong>.<br /><br /><br />
+				<h5 class="text-center"><strong>Selecting AI Model (Waifu2x Only)</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/modelupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				This section allows you to select an AI model for upscaling.<br /><br />
+				<strong>Upconv 7 Anime:</strong><br /> This model is designed for anime films or 3D cartoons.<br /><br />
+				<strong>Upconv 7 Photo:</strong><br /> This model is designed for reality videos. <strong>Don't use this model for 2D videos</strong>.<br /><br />
+				<strong>Cunet:</strong><br /> This model is specifically designed for 2D videos. However, this model is also 2x slower than the models above.<br /><br />
+				<strong>DeNoise Only:</strong> This "model" allows you to only DeNoise the video without upscaling. It has the same speed as the <code>Cunet</code> model.<br /><br /><br />
+				<h5 class="text-center"><strong>Selecting Noise Reduction Level</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/noiseupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				This option allows you to set the noise reduction level for the video. If your video has no noticeable noise, then you'll want to set this value to <code>Medium</code> in Waifu2x or <code>3-4</code> in SRMD. If your video has noticable noise, then you'll want to set this value to a higher selection.<br /><br /><br />
+				<h5 class="text-center"><strong>Selecting Color Precision (Waifu2x Only)</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/precisionupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				Color precision specifies the accuracy of the colors during the upscaling process.<br /><br />
+				<strong>Fp32:</strong><br /> This is the recommended option. Fp32 is a high color precision level which allows a higher quality upscaling at the cost of a slight upscaling speed loss.<br /><br />
+				<strong>Fp16:</strong><br /> This option is faster than Fp32 and is suggested to use if you want a faster upscaling process and don't care so much about the quality of the colors in the video.<br /><br /><br />
+				<h5 class="text-center"><strong>Using TTA (SRMD Only)</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/ttaupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				Test Time Augmentation (TTA) allows the upscaling to be more quality focused at the huge cost of upscaling speed. Since using TTA is so slow, it is generally not recommended to use.<br /><br /><br />
+				<h5 class="text-center"><strong>Selecting Output Resolution</strong></h5>
+				<p class="fw-normal text-black text-center"><img src="refs/outupscale.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img></p>
+				Lastly is to set the output resolution. <strong>Keep in mind of the resolution upscaling limits in both Waifu2x and SRMD. Waifu2x only supports a maximum resolution of 2x the source video resolution whereas SRMD supports up to 4x.</strong> The default output resolution is set to maximum output resolution possible.<br /><br />
+				<strong>Auto Adjust:</strong><br /> This setting allows EncodeGUI to automatically adjust either the output resolution width or height on the basis of user defined width or height in accordance with the video aspect ratio. You can disable this option so that you can set the width and height to be outside of the source video's aspect ratio.<br /><br /><br />
+			</div>
+			</div>
+        </main>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; <a class="link-light" href="https://dagooseyt.com">DaGoose</a> 2022-2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="privacy-terms">Privacy / Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="support">Support</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

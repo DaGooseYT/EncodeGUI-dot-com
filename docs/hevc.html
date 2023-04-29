@@ -1,0 +1,227 @@
+<!--Copyright (C) 2022-2023 DaGoose-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="DaGoose" />
+        <title>EncodeGUI - Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index" >
+						<img src="../assets/egui.png" height="40" class="d-inline-block align-middle mr-2" alt="...">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link" href="../index">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../downloads">Downloads</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation">Docs</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLDv6vnHjQp9c4J3hKlTn3T1DAAijtrDfh">Tutorials</a></li>
+							<li class="nav-item"><a class="nav-link" href="../demo">Demos</a></li>
+							<li class="nav-item"><a class="nav-link" href="../support">Support</a></li>
+							<li class="nav-item"><a class="nav-link" href="../donate">Donate ❤️</a></li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+			<div class="container px-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-9">
+					<div class="p-3 bg-light" style="width: 265px;">
+						<a href="documentation" class="d-flex pb-3 mb-3 link-dark text-decoration-none border-bottom justify-content-center">
+					<span class="fs-5 fw-semibold"><strong>Documentation</strong></span>
+					</a>
+					<ul class="list-unstyled ps-0">
+					<li class="mb-1"><strong>General</strong></li>
+					<li class="mb-1">
+						<a href="requirements">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							System requirements
+						</button>
+						</a>
+						<a href="install">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							Installation
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>EncodeGUI (v1.1.7)</strong></li>
+					<li class="mb-1">
+						<a href="usage">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#video-collapse" aria-expanded="false">
+						Video Encoding
+						</button>
+						<div class="collapse show" id="video-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="video" class="link-dark rounded">General</a></li>
+							<li><a href="avc" class="link-dark rounded">AVC</a></li>
+							<li><a href="hevc" class="link-dark rounded">HEVC</a></li>
+							<li><a href="prores" class="link-dark rounded">ProRes</a></li>
+							<li><a href="theora" class="link-dark rounded">Theora</a></li>
+							<li><a href="vp9" class="link-dark rounded">VP9</a></li>
+							<li><a href="av1" class="link-dark rounded">AV1</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+						Other Encoding
+						</button>
+						<div class="collapse" id="dashboard-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="audio" class="link-dark rounded">Audio</a></li>
+							<li><a href="subtitle" class="link-dark rounded">Subtitles</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+						Filters
+						</button>
+						<div class="collapse" id="orders-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="interpolation" class="link-dark rounded">Interpolation</a></li>
+							<li><a href="upscale" class="link-dark rounded">Upscaling</a></li>
+							<li><a href="colors" class="link-dark rounded">Color Converter</a></li>
+							<li><a href="antialias" class="link-dark rounded">Anti Aliasing</a></li>
+							<li><a href="ffmpeg" class="link-dark rounded">FFMpeg</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/EncodeGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>FrameGUI (v2.2.0)</strong></li>
+					<li class="mb-1">
+						<a href="fgui">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/FrameGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+						<a href="../support">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Troubleshooting
+						</button>
+						</a>
+					</li>
+					</ul>
+					</div>
+				</div>
+			<div class="col-lg-8 col-sm-12 col-md-12 col-12">
+				<h1 class="text-center fw-bolder my-5">HEVC</h1>
+					This codec is similar to the AVC counterpart, but adds much higher compression to the video without loss of quality. Since HEVC uses a complex encoding algorithm, it requires more power to stream the video than AVC.
+					Hardware encoding support is available for HEVC and can be enabled using the <code>Hardware</code> checkbox in the <strong>HEVC > Main</strong> tab. Scroll down this page for more details. The supported hardware encoders are: NVENC (Nvidia), QuickSync (Intel), or AMF (AMD).<br /><br />
+					<strong>Recommend for:</strong><br /> Very high compression, very high resolution videos (up to 8192x4352), videos with HDR10(+), very high color depth (up to 12-bit).<br /><br />
+					<strong>NOT recommend for:</strong><br /> Videos intended to be viewed on mobile devices (battery killer due to HEVC complex encoding algorithm), videos intended to be streamed on older devices (before 2016), fast speed encoding.</p><br /><br />
+					<h3 class="text-center fw-bolder">How to Use</h3><br /><br />
+					<h5 class="text-center"><strong>Encoding Mode</strong></h5>
+					<p class="fw-normal text-center text-black"><img src="refs/mode265.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					<strong>Constant Rate Factor (1 pass):</strong><br />
+					This is the recommended option. The video bitrate is automatically adjusted during the encoding process in accordance with the CRF value to provide a high quality output while having a highly compressed video.<br /><br />
+					Lower values = better quality (min: 0). <br />
+					Higher value = lower quality (max: 51). <br />
+					Lossless quality = 0. <br />
+					Recommend option = 17. <br /><br />
+					<strong>Average Bitrate (1 pass):</strong> <br />
+					Encodes the video in a defined average bitrate (kbits/s). The required bitrate varies on the basis of the resolution of the video, the frame rate, and the colors.<br /><br />
+					Higher value = higher quality. <br />
+					Lower value = lower quality. <br /><br />
+					<strong>Target Bitrate (2 pass):</strong> <br />
+					Encodes the video to a specified file size or a specific bitrate. This option is recommended if you need the video file to be at a specific file size. This encoding method is 2 pass, meaning the video encodes twice.<br /><br />
+					<strong>Constant Quantizer (1 pass):</strong><br />
+					This option is similar to Constant Rate Factor, but does not consider the visual aspects when encoding the video like Constant Rate Factor. This is the next best alternative to Constant Rate Factor rate control.<br /><br />
+					Lower values = better quality (min: 0). <br />
+					Higher value = lower quality (max: 51). <br />
+					Lossless quality = 0. <br />
+					Recommend option = 17. <br /><br /><br />
+					<h5 class="text-center"><strong>Hardware Encoding</strong></h5>
+					<p class="fw-normal text-center text-black"><img src="refs/hdwr265.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					Hardware encoding is available as an option for much faster encoding speeds. Colors, Profile, Tune, Reference Frames, and B-frames are disabled when hardware encoding is enabled.<br /><br />
+					<div class="alert alert-warning" role="alert">
+						<strong>Note:</strong> Hardware encoding isn’t recommended to use because it does not produce the same high quality video that the software encoding counterpart has.
+					</div><br />
+					<strong>NVENC:</strong><br /> This hardware encoder utilizes Nvidia GPUs. Constant Quantizer, Average bitrate, and Target Bitrate are all supported rate controls.<br /><br />
+					<strong>QuickSync:</strong><br /> This hardware encoder utilizes Intel GPUs. As of v1.0.3, Constant Quantizer, Average bitrate, and Target Bitrate are all supported rate controls.<br /><br />
+					<strong>AMF:</strong><br /> This hardware encoder utilizes AMD GPUs. As of v1.0.3, Constant Quantizer, Average bitrate, and Target Bitrate are all supported rate controls.<br /><br /><br />
+					<h5 class="text-center"><strong>Profile and Tune</strong></h5>
+					<p class="fw-normal text-center text-black"><img src="refs/portu265.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					<strong>Tune:</strong><br /> Sets the tune for the video on the basis of what type of video the source is.<br /><br />
+					<strong>Preset:</strong><br /> Sets the CPU preset (speed) to use for encoding.<br /><br />
+					Higher preset = faster encode but lower quality.<br />
+					Lower preset = slower encode but higher quality.<br />
+					Recommended: slow<br /><br /><br />
+					<h5 class="text-center"><strong>HEVC Profiling</strong></h5>
+					<p class="fw-normal text-center text-black"><img src="refs/profile265.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					You can manually adjust the profile if your video consists of high color depth and color sampling. Disabling it will simply allow the encoder to automatically assign the profile, level and colors (recommended).<br /><br />
+					<strong>Profile:</strong><br /> The encoding profile to use. The recommended option to use is Main for most videos. Select Main 10 for videos in 10-bit color depth and adjust the color depth in the colors group box. For videos in 4:2:2 or 4:4:4 sampling, set the profile to Main 4:4:4 and set the color sampling to 4:2:2 or 4:4:4 in the colors group box.<br /><br />
+					<strong>Level:</strong><br /> The level to assign to the video profile. This option should be set on the basis of the resolution and frame rate of the video. Use a higher level for high frame rate / resolution videos and use a lower value for low frame rate / resolution videos. Set the Unlimited to allow the encoder to automatically assign a level (recommended).<br /><br /><br />
+					<h5 class="text-center"><strong>Frames</strong></h5>
+					<p class="fw-normal text-center text-black"><img src="refs/frames265.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					<strong>Reference Frames:</strong><br />
+					The number of reference frames for the encoder to use. Reference frames help define future frames.<br /><br />
+					<strong>B Frames:</strong><br />
+					The number of B-frames/prediction frames to assign to the video. B-frames act as compression frames in the video.</p><br /><br /><br />
+					<h5 class="text-center"><strong>Signals</strong></h5>
+					<p class="fw-normal text-center text-black"><img src="refs/signals.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					HEVC signaling allows you to add HDR10(+) metadata to the video and/or specify the color spaces in HEVC metadata.<br /><br />
+					<h6 class="text-center"><strong>HDR10(+) Metadata</strong></h6>
+					<p class="fw-normal text-center text-black"><img src="refs/hdr.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					Sets the HDR Metadata for HEVC encoding.<br /><br />
+					<strong>Max CLL/FALL:</strong><br /> Both set the minimum and maximum light level content (in luminance) in the video.<br /><br />
+					<strong>Master Display:</strong><br /> Master display specifies the "tuning" color space for displaying HDR content. The default is specified to DCI-P3. Read <a href="https://github.com/SK-Hardwired/nv_hevc_hdr_patcher/issues/9">this</a> thread for more details on calculating other color spaces for master display.<br /><br />
+					<strong>Dynamic Metadata:</strong><br /> This option allows you to specify dynamic HDR metadata for HDR10+ videos. Only <code>.json</code> metadata files are accepted as an input.<br /><br />
+					<h6 class="text-center"><strong>HEVC Color Spaces</strong></h6>
+					<p class="fw-normal text-center text-black"><img src="refs/colorshdr.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+					Allows you to specify the color spaces in HEVC metadata. This option is required to use if you are encoding HDR content. <strong>This option won't convert the color spaces</strong>.<br /><br />
+					<strong>Range:</strong> Sets the color range for the video. Most videos will use <code>Limited</code>.<br /><br />
+					<strong>Matrix:</strong> Sets the color matrix for the video in metadata. Use <code>BT2020nc</code> for HDR videos.<br /><br />
+					<strong>Transfer:</strong> Sets the color transfer for the video in metadata. Use <code>SMPTE2084</code> for HDR videos.<br /><br />
+					<strong>Primaries:</strong> Sets the color primaries for the video in metadata. Use <code>BT2020</code> for HDR videos.<br /><br /><br />
+				</div>
+			</div>
+        </main>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; <a class="link-light" href="https://dagooseyt.com">DaGoose</a> 2022-2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="privacy-terms">Privacy / Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="support">Support</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

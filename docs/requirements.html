@@ -1,0 +1,253 @@
+<!--Copyright (C) 2022-2023 DaGoose-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="DaGoose" />
+        <title>EncodeGUI - Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index" >
+						<img src="../assets/egui.png" height="40" class="d-inline-block align-middle mr-2" alt="...">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link" href="../index">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../downloads">Downloads</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation">Docs</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLDv6vnHjQp9c4J3hKlTn3T1DAAijtrDfh">Tutorials</a></li>
+							<li class="nav-item"><a class="nav-link" href="../demo">Demos</a></li>
+							<li class="nav-item"><a class="nav-link" href="../support">Support</a></li>
+							<li class="nav-item"><a class="nav-link" href="../donate">Donate ❤️</a></li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+			<div class="container px-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-9">
+					<div class="p-3 bg-light" style="width: 265px;">
+						<a href="documentation" class="d-flex pb-3 mb-3 link-dark text-decoration-none border-bottom justify-content-center">
+					<span class="fs-5 fw-semibold"><strong>Documentation</strong></span>
+					</a>
+					<ul class="list-unstyled ps-0">
+					<li class="mb-1"><strong>General</strong></li>
+					<li class="mb-1">
+						<a href="requirements">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							System requirements
+						</button>
+						</a>
+						<a href="install">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							Installation
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>EncodeGUI (v1.1.7)</strong></li>
+					<li class="mb-1">
+						<a href="usage">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#video-collapse" aria-expanded="false">
+						Video Encoding
+						</button>
+						<div class="collapse" id="video-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="video" class="link-dark rounded">General</a></li>
+							<li><a href="avc" class="link-dark rounded">AVC</a></li>
+							<li><a href="hevc" class="link-dark rounded">HEVC</a></li>
+							<li><a href="prores" class="link-dark rounded">ProRes</a></li>
+							<li><a href="theora" class="link-dark rounded">Theora</a></li>
+							<li><a href="vp9" class="link-dark rounded">VP9</a></li>
+							<li><a href="av1" class="link-dark rounded">AV1</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+						Other Encoding
+						</button>
+						<div class="collapse" id="dashboard-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="audio" class="link-dark rounded">Audio</a></li>
+							<li><a href="subtitle" class="link-dark rounded">Subtitles</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+						Filters
+						</button>
+						<div class="collapse" id="orders-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="interpolation" class="link-dark rounded">Interpolation</a></li>
+							<li><a href="upscale" class="link-dark rounded">Upscaling</a></li>
+							<li><a href="colors" class="link-dark rounded">Color Converter</a></li>
+							<li><a href="antialias" class="link-dark rounded">Anti Aliasing</a></li>
+							<li><a href="ffmpeg" class="link-dark rounded">FFMpeg</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/EncodeGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>FrameGUI (v2.2.0)</strong></li>
+					<li class="mb-1">
+						<a href="fgui">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/FrameGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+						<a href="../support">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Troubleshooting
+						</button>
+						</a>
+					</li>
+					</ul>
+					</div>
+				</div>
+			<div class="col-lg-8 col-sm-12 col-md-12 col-12">
+				<div class="mb-5 my-5">
+                    <h1 class="text-center fw-bolder">System Requirements</h1>
+                        <p class="lead fw-normal text-black text-center mb-0 my-5"><strong>A Heads-up for New Users:</strong></p><br />
+						<p class="fw-normal text-black"><strong>Although EncodeGUI is easy to use, it’s not for everyone</strong>. If you are unfamiliar with most of the terms below, then EncodeGUI is most likely NOT for you:</p><br />
+						<p class="fw-normal text-black">• Video/Audio codec • CUDA • NCNN • Vulkan • AVC • HEVC • ProRes • Theora • VP9 • NVENC • QuickSync • AMF • Video container • Video resolution • Video profile • Video profile level • DeNoise • Frame interpolation • Artefacts
+							• Muxing • Bitrate • CRF / Constant Rate Factor • Constant Quantizer • Rate control • Frame rate • Color depth • Color sampling • Color space • Color matrix • Color transfer • Color primaries • Color range</p><br />
+						<p class="fw-normal text-black"><strong>FrameGUI does not require knowledge relating to the terms above.</strong> However, you still must have basic computer skills, such as being able to copy files and compressing files into a .zip archive. This is necessary for when you need to report a problem to the developer.</p>
+						<p class="lead fw-normal text-black text-center mb-0 my-5"><strong>Minimum PC Specifications (Windows):</strong></p><br />
+						<p class="fw-normal text-black">In order to use all features in EncodeGUI or FrameGUI, your system must meet or exceed the minimum specifications listed below. AMD GPUs are supported but CUDA AI filters will not be supported. Consequently, AMD GPUs are generally not recommended for EncodeGUI. <strong>You can still use EncodeGUI or FrameGUI if your system doesn’t meet the minimum requirements</strong>, but AI filters will not be usable.</p><br />
+						<div class="row" style="margin: 0 auto;">
+							<table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+							<thead>
+								<tr>
+									<th class="px-3" scope="col">CPU</th>
+									<th class="px-3" scope="col">GPU</th>
+									<th class="px-3" scope="col">Storage Type</th>
+									<th class="px-3" scope="col">RAM</th>
+									<th class="px-3" scope="col">Screen Resolution</th>
+									<th class="px-3" scope="col">OS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<tr scope="row"></th>
+									<td class="px-3">x64, 2-cores</td>
+									<td class="px-3">Nvidia GT 1030</td>
+									<td class="px-3">SSD</td>
+									<td class="px-3">8GB</td>
+									<td class="px-3">1280x720</td>
+									<td class="px-3">Windows 10</td>
+								</tr>
+							</tbody>
+							<caption>Any specs newer than what's listed above are assumed supported. ARM CPUs are not supported.</caption>
+							</table>
+						</div>
+						<div class="alert alert-warning" role="alert">
+							<strong>Note:</strong> If using an Nvidia GPU, it MUST be Pascal architecture or newer. Nvidia Maxwell GPUs or older are not supported for the AI filters. Intel integrated GPUs also aren't supported (with the exception of Xe).
+						</div>
+						<p class="text-center lead fw-normal text-black mb-0 my-5"><strong>Recommended PC Specifications (Windows):</strong></p><br />
+						<div class="row" style="margin: 0 auto;">
+							<table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+								<thead>
+								<tr>
+									<th class="px-3" scope="col">CPU</th>
+									<th class="px-3" scope="col">GPU</th>
+									<th class="px-3" scope="col">Storage Type</th>
+									<th class="px-3" scope="col">RAM</th>
+									<th class="px-3" scope="col">Screen Resolution</th>
+									<th class="px-3" scope="col">OS</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<tr scope="row"></th>
+									<td class="px-3">i7-12700K</td>
+									<td class="px-3">RTX 3060</td>
+									<td class="px-3">SSD</td>
+									<td class="px-3">16GB</td>
+									<td class="px-3">1920x1080</td>
+									<td class="px-3">Windows 11</td>
+								</tr>
+								</tbody>
+								<caption>Nvidia RTX GPUs are recommended due to the presence of AI tensor cores.</caption>
+							</table>
+						</div>
+						<div class="alert alert-warning" role="alert">
+							<strong>Note:</strong> Upscaling/Interpolating 8K videos with the AI filters will need at least 24GB of system RAM. 32GB system RAM is necessary for the dual gpu processing feature.
+						</div>
+						<p class="text-center lead fw-normal text-black mb-0 my-5"><strong>Apple Macintosh Minimum Specifications (macOS):</strong></p><br />
+						<div class="row" style="margin: 0 auto;">
+							<table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+								<thead>
+								<tr>
+									<th class="px-4" scope="col">CPU/GPU</th>
+									<th class="px-4" scope="col">RAM</th>
+									<th class="px-4" scope="col">Screen Resolution</th>
+									<th class="px-4" scope="col">OS</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<tr scope="row"></th>
+									<td class="px-4">Apple M1</td>
+									<td class="px-4">8GB</td>
+									<td class="px-4">1920x1080</td>
+									<td class="px-4">Ventura 13.1</td>
+								</tr>
+								</tbody>
+								<caption>Any specs newer than what's listed above are assumed supported.</caption>
+							</table>
+						</div><br />
+						<div class="alert alert-warning" role="alert">
+							<strong>Note:</strong> FrameGUI for macOS is only supported on Apple Silicon Macs. We do not and will not provide support for Intel Macs or older versions of macOS.
+						</div>
+					</div>
+				</div>
+			</div>
+        </main>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; <a class="link-light" href="https://dagooseyt.com">DaGoose</a> 2022-2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="privacy-terms">Privacy / Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="support">Support</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

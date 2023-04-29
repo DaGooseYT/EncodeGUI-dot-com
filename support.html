@@ -1,0 +1,559 @@
+<!--Copyright (C) 2022-2023 DaGoose-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>EncodeGUI - Support</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index" >
+					<img src="assets/egui.png" height="40" class="d-inline-block align-middle mr-2" alt="...">
+					</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="downloads">Downloads</a></li>
+							<li class="nav-item"><a class="nav-link" href="docs/documentation">Docs</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLDv6vnHjQp9c4J3hKlTn3T1DAAijtrDfh">Tutorials</a></li>
+							<li class="nav-item"><a class="nav-link" href="demo">Demos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="support">Support</a></li>
+							<li class="nav-item"><a class="nav-link" href="donate">Donate ❤️</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder">Support</h1>
+                        <p class="lead fw-normal text-muted mb-0 my-4">Unfortunately, you may get errors while using EncodeGUI/FrameGUI. Below are some common issues and how to solve them. If you can’t figure out your problem (<strong>after attempting to solve it on your own</strong>), please follow the directions on the right side of the screen to submit a proper issue/bug report to the developer.</p>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-xl-8">
+                            <h2 class="fw-bolder mb-3">Process Errors</h2>
+                            <div class="accordion mb-5" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCuda" aria-expanded="true" aria-controls="collapseOne">CUDA runtime failed to load (EncodeGUI only)</button></h3>
+                                    <div class="accordion-collapse collapse" id="collapseCuda" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This problem occurs then CUDA was unable to start. This could mean either one of two things: the selected GPU drivers are out of date or the GPU you selected isn't supported.<br /><br />
+											<strong>My GPU is confirmed supported and the drivers are also up to date, but I still keep getting this error:</strong><br />
+											This issue can mostly occur for users who are using laptops with multiple GPUs. In order for EncodeGUI to correctly index the GPUs on your system, you must go to <strong>Windows Settings > Display > Graphics</strong>. Click the "Browse" button and locate and select the main EXE file for EncodeGUI (it's in the folder that you installed EncodeGUI to). After clicking the "Add" button in the dialog, EncodeGUI will show up in the list below.
+											Next, you'll want to click EncodeGUI in the list and then select the "Options" button. A dialog will pop-up asking you to select a GPU. Select the deadicated GPU for your laptop (usually marked as "High Performance") in the list and then select "Save". Restart EncodeGUI. If your deadicated GPU shows up in the title bar of EncodeGUI, then the GPU list in EncodeGUI is correctly indexed.
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#cudaPage" aria-expanded="false" aria-controls="collapseTwo">CUDA paging file is too small (EncodeGUI only)</button></h3>
+                                    <div class="accordion-collapse collapse" id="cudaPage" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This issue occurs when VapourSynth attempts to create an instance of PyTorch for EncodeGUI AI or RIFE, but failed. To fix this, close any duplicate instances of EncodeGUI and its dependencies (namely, VSPipe.exe and/or ffmpeg.exe) using task manager in Windows.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#vkQueue" aria-expanded="false" aria-controls="collapseTwo">NCNN VkQueueSubmit failed</button></h3>
+                                    <div class="accordion-collapse collapse" id="vkQueue" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This is a common error that occurs when the Vulkan GPU rendering has timed out, causing the drivers to crash. To fix it, extend the timeout duration by following <a href="https://substance3d.adobe.com/documentation/spdoc/gpu-drivers-crash-with-long-computations-128745489.html">this guide.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingFour"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#vkMemory" aria-expanded="false" aria-controls="collapseThree">NCNN VkAllocateMemory failed</button></h3>
+                                    <div class="accordion-collapse collapse" id="vkMemory" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This issue occures for either one of two reasons: the GPU threads for the NCNN process is two high or your system does not have enough RAM to run the process. For EncodeGUI, try decreasing the GPU thread count in either the Frame Interpolation or Resolution Upscaling sections located in tabs: <strong>Video > Vapoursynth</strong>.
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingFive"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#uknPage" aria-expanded="false" aria-controls="collapseTwo">Unknown process error occured</button></h3>
+                                    <div class="accordion-collapse collapse" id="uknPage" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This issue occured because a process error occured and the software was unable to determine exactly what the problem was. Please follow the directions on the right side of your screen to send a proper issue report.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="fw-bolder mb-3">Adding Job Errors</h2>
+                            <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Audio codec is not supported with output container</button></h3>
+                                    <div class="accordion-collapse collapse" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                           Use the chart below to determine the support for each audio codec to each output container:<br /><br />
+										   <div class="row" style="margin: 0 auto;"><table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+										   <thead>
+												<tr>
+													<th scope="col"><strong>Codecs / Containers</strong></th>
+													<th scope="col">.mp4</th>
+													<th scope="col">.mkv</th>
+													<th scope="col">.mov</th>
+													<th scope="col">.avi</th>
+													<th scope="col">.asf</th>
+													<th scope="col">.ts</th>
+													<th scope="col">.flv</th>
+													<th scope="col">.3gp</th>
+													<th scope="col">.ogv</th>
+													<th scope="col">.webm</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr scope="row">
+													<td>AAC</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>MP3</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>AC3</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>FLAC</td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>Vorbis</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>✓</td>
+													<td>✓</td>
+												</tr>
+												<tr scope="row">
+													<td>Opus</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td>✓</td>
+													<td>✓</td>
+												</tr>
+												<tr scope="row">
+													<td>EAC3</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>ALAC</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>WMA</td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>PCM</td>
+													<td></td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>MP2</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>DTS</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>TrueHD</td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+												<caption>All of these codecs have been tested to be compatible with the marked containers.</caption>
+											</table></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Subtitle codec is not supported with output container</button></h3>
+                                    <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            Use the chart below to determine the support for each subtitle codec to each output container:<br /><br />
+											<div class="row" style="margin: 0 auto;"><table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+										    <thead>
+												 <tr>
+													 <th class="px-4" scope="col"><strong>Codecs / Containers</strong></th>
+													 <th class="px-3" scope="col">.mp4</th>
+													 <th class="px-3" scope="col">.mkv</th>
+													 <th class="px-3" scope="col">.mov</th>
+													 <th class="px-3" scope="col">.3gp</th>
+													 <th class="px-3" scope="col">.webm</th>
+												 </tr>
+											</thead>
+											<tbody>
+												<tr scope="row">
+													<td>SubRip</td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>WebVTT</td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td>✓</td>
+													</tr>
+												<tr scope="row">
+													<td>ASS / SSA</td>
+													<td></td>
+													<td>✓</td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr scope="row">
+													<td>TTXT (Mov_Text)</td>
+													<td>✓</td>
+													<td></td>
+													<td>✓</td>
+													<td>✓</td>
+													<td></td>
+												</tr>
+											</tbody>
+												<caption>All of these codecs have been tested to be compatible with the<br />marked containers.</caption>
+											</table></div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Video codec is not supported with output container</button></h3>
+                                    <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            Use the chart below to determine the support for each video codec to each output container:<br /><br />
+											<div class="row" style="margin: 0 auto;"><table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+												<thead>
+													<tr>
+														<th scope="col"><strong>Codecs / Containers</strong></th>
+														<th scope="col">.mp4</th>
+														<th scope="col">.mkv</th>
+														<th scope="col">.mov</th>
+														<th cope="col">.avi</th>
+														<th scope="col">.asf</th>
+														<th scope="col">.ts</th>
+														<th scope="col">.flv</th>
+														<th scope="col">.3gp</th>
+														<th scope="col">.ogv</th>
+														<th scope="col">.webm</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr scope="row">
+														<td>AVC</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr scope="row">
+														<td>HEVC</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr scope="row">
+														<td>ProRes</td>
+														<td></td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr scope="row">
+														<td>Theora</td>
+														<td></td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td>✓</td>
+														<td></td>
+													</tr>
+													<tr scope="row">
+														<td>VP9</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td>✓</td>
+													</tr>
+													<tr scope="row">
+														<td>AV1</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td>✓</td>
+													</tr>
+													<tr scope="row">
+														<td>VP8 (Muxing only)</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td>✓</td>
+													</tr>
+													<tr scope="row">
+														<td>VC1 (Muxing only)</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr scope="row">
+														<td>MPEG2 (Muxing only)</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr scope="row">
+														<td>MPEG4 (Muxing Only)</td>
+														<td>✓</td>
+														<td></td>
+														<td>✓</td>
+														<td>✓</td>
+														<td>✓</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+												</tbody>
+													<caption>All of these codecs have been tested to be compatible with the marked containers.</caption>
+												</table>
+											</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card border-0 bg-light mt-xl-5">
+                                <div class="card-body p-4 py-lg-5">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="">
+                                            <div class="h5 fw-bolder text-center">Still can't solve your problem?</div>
+                                            <p class="text-black text-center mb-4">Follow the steps below to submit a proper issue/bug report to the developer.<br /><br /></p>
+											<p class="text-black text-left">1. First, please describe the error/problem that you have encountered and the steps you took leading up to it.<br /><br />
+												2. Now you will need to provide 2 files. You may compress these files together using the .zip extension (<strong>we will not accept any other compression format</strong>) or send as individual files:<br /> <br />
+												• The <code>xxxxxxxx.vpy</code> script file. <br />
+												• The <code>ProcessLogs-xxxxxxxx.txt</code> text file (if this file does not exist, please let us know).<br /><br />
+												You can find these files by going to the Job Queue and then right-clicking the Failed job. Select "Open logs path". See the example image below:<br />
+												<img src="docs/refs/errorjob.png" class="img-fluid d-inline-block align-middle mr-2 my-3" alt="...">
+												<div class="alert alert-warning" role="alert">
+													<strong>Note:</strong> if containing PII, we recommend that you censor user folder names in the paths that could be present in both files.
+												</div><br />
+												3. Next, you will need to state your system specifications in the following format: <br />
+												• CPU: xxxx <br />
+												• GPU: xxxx <br />
+												• RAM (amount in GB): xxxx <br />
+												• OS (AND version): xxxx<br /><br />
+												4. Please provide any other additional info that you think will be helpful.<br />
+											</p>
+                                            <div class="h7 fw-bolder">Submit your issue/bug report on either Discord/GitHub/Patreon (I do NOT provide support on any other platform):</div>
+											<div class="my-3 text-center">
+                                            	<a class="fs-1 px-2 link-dark" href="https://discord.gg/PmcbXJVBNu"><i class="bi-discord"></i></a>
+                                            	<a class="fs-1 px-2 link-dark" href="https://github.com/DaGooseYT/EncodeGUI/issues"><i class="bi-github"></i></a>
+											</div>
+											<div class="alert alert-warning" role="alert">
+												<strong>Note:</strong> Make sure you have followed each of the steps and included all necessary information. The developer will NOT respond to incomplete error/bug reports!
+											</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; <a class="link-light" href="https://dagooseyt.com">DaGoose</a> 2022-2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="privacy-terms">Privacy / Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="support">Support</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

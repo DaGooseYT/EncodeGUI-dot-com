@@ -1,0 +1,404 @@
+<!--Copyright (C) 2022-2023 DaGoose-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="DaGoose" />
+        <title>EncodeGUI - Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index" >
+						<img src="../assets/egui.png" height="40" class="d-inline-block align-middle mr-2" alt="...">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link" href="../index">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../downloads">Downloads</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation">Docs</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLDv6vnHjQp9c4J3hKlTn3T1DAAijtrDfh">Tutorials</a></li>
+							<li class="nav-item"><a class="nav-link" href="../demo">Demos</a></li>
+							<li class="nav-item"><a class="nav-link" href="../support">Support</a></li>
+							<li class="nav-item"><a class="nav-link" href="../donate">Donate ❤️</a></li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+			<div class="container px-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-9">
+					<div class="p-3 bg-light" style="width: 265px;">
+						<a href="documentation" class="d-flex pb-3 mb-3 link-dark text-decoration-none border-bottom justify-content-center">
+					<span class="fs-5 fw-semibold"><strong>Documentation</strong></span>
+					</a>
+					<ul class="list-unstyled ps-0">
+					<li class="mb-1"><strong>General</strong></li>
+					<li class="mb-1">
+						<a href="requirements">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							System requirements
+						</button>
+						</a>
+						<a href="install">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							Installation
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>EncodeGUI (v1.1.7)</strong></li>
+					<li class="mb-1">
+						<a href="usage">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#video-collapse" aria-expanded="false">
+						Video Encoding
+						</button>
+						<div class="collapse" id="video-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="video" class="link-dark rounded">General</a></li>
+							<li><a href="avc" class="link-dark rounded">AVC</a></li>
+							<li><a href="hevc" class="link-dark rounded">HEVC</a></li>
+							<li><a href="prores" class="link-dark rounded">ProRes</a></li>
+							<li><a href="theora" class="link-dark rounded">Theora</a></li>
+							<li><a href="vp9" class="link-dark rounded">VP9</a></li>
+							<li><a href="av1" class="link-dark rounded">AV1</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+						Other Encoding
+						</button>
+						<div class="collapse show" id="dashboard-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="audio" class="link-dark rounded">Audio</a></li>
+							<li><a href="subtitle" class="link-dark rounded">Subtitles</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+						Filters
+						</button>
+						<div class="collapse" id="orders-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="interpolation" class="link-dark rounded">Interpolation</a></li>
+							<li><a href="upscale" class="link-dark rounded">Upscaling</a></li>
+							<li><a href="colors" class="link-dark rounded">Color Converter</a></li>
+							<li><a href="antialias" class="link-dark rounded">Anti Aliasing</a></li>
+							<li><a href="ffmpeg" class="link-dark rounded">FFMpeg</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/EncodeGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>FrameGUI (v2.2.0)</strong></li>
+					<li class="mb-1">
+						<a href="fgui">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/FrameGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+						<a href="../support">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Troubleshooting
+						</button>
+						</a>
+					</li>
+					</ul>
+					</div>
+				</div>
+			<div class="col-lg-8 col-sm-12 col-md-12 col-12">
+				<h1 class="fw-bolder text-center my-5">Audio Codecs</h1>
+				<div class="my-5" style="position: relative; display: block; padding: 0; overflow: hidden; padding-bottom: 56.25%;"><iframe src="https://youtube.com/embed/_vfXRX9MOB8?t=328" style="height: 100%; width: 100%; position: absolute;"></iframe><br /></div>
+                <p class="fw-normal text-black mb-0">EncodeGUI consists of 6 audio codecs to choose from. Please refer to the chart below for the compatibility of each supported audio codec to each output video container. <strong>You will get an error when adding a job to the queue if there is an incompatibility with the audio codec to the output container</strong>.</p><br /><br />
+				<div class="row" style="margin: 0 auto;">
+					<table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+						<thead>
+							<tr>
+								<th scope="col"><strong>Codecs / Containers</strong></th>
+								<th scope="col">.mp4</th>
+								<th scope="col">.mkv</th>
+								<th scope="col">.mov</th>
+								<th scope="col">.avi</th>
+								<th scope="col">.asf</th>
+								<th scope="col">.ts</th>
+								<th scope="col">.flv</th>
+								<th scope="col">.3gp</th>
+								<th scope="col">.ogv</th>
+								<th scope="col">.webm</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr scope="row">
+								<td>AAC</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>MP3</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>AC3</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>FLAC</td>
+								<td></td>
+								<td>✓</td>
+								<td></td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>✓</td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>Vorbis</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>✓</td>
+								<td>✓</td>
+							</tr>
+							<tr scope="row">
+								<td>Opus</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td>✓</td>
+								<td>✓</td>
+							</tr>
+							<tr scope="row">
+								<td>EAC3</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>ALAC</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>WMA</td>
+								<td></td>
+								<td>✓</td>
+								<td></td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>PCM</td>
+								<td></td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>MP2</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>DTS</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr scope="row">
+								<td>TrueHD</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>✓</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+							<caption>All of these codecs have been tested to be compatible with the marked containers.</caption>
+					</table>
+				</div><br /><br />
+				<h3 class="fw-bolder text-center my-4">Enabling and Configuring Audio</h3>
+				<p class="fw-normal text-black mb-0">The highlighted section in the photo below is where you set the state of the audio. Uncheck the <code>Audio</code> checkbox to disable/mute the audio in the output.</p><br />
+				<p class="fw-normal text-black text-center"><img src="refs/audio.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+				<p class="fw-normal text-black mb-0">Select <code>Encode</code> in the drop-down menu to enable audio encoding. A new tab will appear at the top of the program:</p><br />
+				<p class="fw-normal text-black text-center"><img src="refs/audiotab.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+				<p class="fw-normal text-black mb-0">Click the <code>Audio</code> tab and then select the audio track you wish to make changes to by using the drop-down menu under the <code>Select Audio</code> groupbox. Select the <code>Encoding</code> checkbox if you would like to make changes to the audio such as converting the codec. Below is where you can set the title and the language for the selected audio track:</p><br />
+				<p class="fw-normal text-black text-center"><img src="refs/audiotitle.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+				<p class="fw-normal text-black mb-0">Below are encoding options for the selected audio track.<br />
+					<br /><strong>Codec:</strong><br /> Sets the audio codec to encode to. See the section below for deatils of each codec.<br />
+					<br /><strong>Bitrate:</strong><br /> Sets the audio bitrate to encode to. Some audio codecs are more efficient than others. See below for more detailes.<br />
+					<br /><strong>Downmix:</strong><br /> An optional parameter that sets the number of audio audio channels to encode to. Any channels not included in the output are simply truncated. Using this tool <strong>won't</strong> upscale the number of channels.<br /><br />
+				</p>
+				<p class="fw-normal text-black text-center"><img src="refs/audioencode.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></p>
+				<p class="fw-normal text-black mb-0">Lastly, click the <code>Add Selected Audio to Queue</code> button and then the audio with the associated encoding settings (if defined) will be added to the queue. If you would like to remove an Audio job from the queue, simply right-click the job and then select the Remove option:</p><br />
+				<p class="fw-normal text-black text-center"><img src="refs/audioqueue.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."><br /><br /><br /></p>
+				<h3 class="fw-bolder text-center my-4">Audio Codecs in EncodeGUI</h3>	
+				<p class="fw-normal text-black text-center mb-0">Below is a description of each audio codec in EncodeGUI and the recommended usage cases.</p><br /><br /><br />
+			<p class="fw-normal text-black mb-0">
+				<h4 class="fw-bolder text-center">AAC</h4><br />
+					A general purpose audio codec and is one of the most popular audio codecs. Up to 6 audio channels are supported. The AAC codec in EncodeGUI uses the native FFMpeg AAC codec with a maximum bitrate of 512kb/s.
+					<br /><strong>Recommended for:</strong> Universal support amongst devices, decent audio compression, up to 6 audio channels supported.
+					<br /><strong>NOT recommended for:</strong> losses audio compression, high quality compression (due to native acc FFMpeg encoder). <br /><br />
+				<h4 class="fw-bolder text-center">MP3</h4><br />
+     				Another popular codec, MP3 is again used primarily for general use and all-around support.
+					<br /><strong>Recommend for:</strong> Support across virtually every device, fast encoding, acceptable compression quality.
+					<br /><strong>NOT recommended for:</strong> High channel count audio (more than 2 channels isn’t supported), high quality compression, bitrate higher than 320kb/s (not supported).<br /><br />
+				<h4 class="fw-bolder text-center">AC3</h4><br />
+     				This codec is popular amongst surround sound audio and is recommended for that purpose. It’s made by Dolby and is specially designed for Dolby Digital systems.
+					<br /><strong>Recommended for:</strong> surround sound audio with up to 6 channels, high quality compression, videos intended to be streamed on Dolby Digital supported devices.
+					<br /><strong>NOT recommend for:</strong> universal support across devices, lossless audio compression.<br /><br />
+				<h4 class="fw-bolder text-center">FLAC</h4><br />
+     				A free and open source audio codec that allows lossless audio compression.
+					<br /><strong>Recommended for:</strong> lossless audio quality (up to 3,200kb/s), up to 8 channels of audio, high bit depth audio (up to 24-bits per sample).
+					<br /><strong>NOT recommended for:</strong> universal support across devices, wide support across video containers (only .mkv and .ogv supported).<br /><br />
+				<h4 class="fw-bolder text-center">Vorbis</h4><br />
+     				Considered a special use codec. It’s compression quality is one of the best over any other audio codec.
+					<br /><strong>Recommended for:</strong> Decent compression quality, up to an insane 256 audio channels, ease of use through constant audio quality option.
+					<br /><strong>NOT recommended for:</strong> Lossless audio bitrate (theoretical maximum is 500kb/s), wide support across video containers (only .mkv, .ogv, and .webm) supported.<br /><br />
+				<h4 class="fw-bolder text-center">Opus</h4><br />
+     				Not a very common codec, but it at least provides decent support across video containers. It also has one of the lowest latency for decoding which makes it ideal for videos intended to be streamed live (real-time).
+					<br /><strong>Recommend for:</strong> decent support across video containers (.mkv, .ts, .ogv, .webm), real-time audio latency rating over wireless connections, up to an insane 255 audio channel support.
+					<br /><strong>NOT recommended for:</strong> lossless audio compression (only 512kb/s maximum bitrate).<br /><br />
+				<h4 class="fw-bolder text-center">DTS</h4><br />
+     				Used and ideal for high quality audio in surround sound. It is the next best alternative to Dolby audio codecs. 
+					<br /><strong>Recommend for:</strong> Surround sound audio and lossless audio compression 
+					<br /><strong>NOT recommended for:</strong> wide support (a lot of video players don't support DTS), high compression quality.<br /><br />
+				<h4 class="fw-bolder text-center">TrueHD</h4><br />
+     				Used and ideal for high quality audio in surround sound. It is the prefered codec for Surround Sound and is capable of supporting Atmos. 
+					<br /><strong>Recommend for:</strong> Surround sound audio and lossless audio compression 
+					<br /><strong>NOT recommended for:</strong> wide support (a lot of video players don't support DTS), high compression quality, consistency (different variants) <br /><br />
+				</div>
+			</p>
+			</div>
+		</div>
+        </main>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; <a class="link-light" href="https://dagooseyt.com">DaGoose</a> 2022-2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="privacy-terms">Privacy / Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="support">Support</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

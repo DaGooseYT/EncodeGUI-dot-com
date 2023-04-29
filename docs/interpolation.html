@@ -1,0 +1,232 @@
+<!--Copyright (C) 2022-2023 DaGoose-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="DaGoose" />
+        <title>EncodeGUI - Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index" >
+						<img src="../assets/egui.png" height="40" class="d-inline-block align-middle mr-2" alt="...">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link" href="../index">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../downloads">Downloads</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation">Docs</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLDv6vnHjQp9c4J3hKlTn3T1DAAijtrDfh">Tutorials</a></li>
+							<li class="nav-item"><a class="nav-link" href="../demo">Demos</a></li>
+							<li class="nav-item"><a class="nav-link" href="../support">Support</a></li>
+							<li class="nav-item"><a class="nav-link" href="../donate">Donate ❤️</a></li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+			<div class="container px-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-9">
+					<div class="p-3 bg-light" style="width: 265px;">
+						<a href="documentation" class="d-flex pb-3 mb-3 link-dark text-decoration-none border-bottom justify-content-center">
+					<span class="fs-5 fw-semibold"><strong>Documentation</strong></span>
+					</a>
+					<ul class="list-unstyled ps-0">
+					<li class="mb-1"><strong>General</strong></li>
+					<li class="mb-1">
+						<a href="requirements">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							System requirements
+						</button>
+						</a>
+						<a href="install">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+							Installation
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>EncodeGUI (v1.1.7)</strong></li>
+					<li class="mb-1">
+						<a href="usage">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#video-collapse" aria-expanded="false">
+						Video Encoding
+						</button>
+						<div class="collapse" id="video-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="video" class="link-dark rounded">General</a></li>
+							<li><a href="avc" class="link-dark rounded">AVC</a></li>
+							<li><a href="hevc" class="link-dark rounded">HEVC</a></li>
+							<li><a href="prores" class="link-dark rounded">ProRes</a></li>
+							<li><a href="theora" class="link-dark rounded">Theora</a></li>
+							<li><a href="vp9" class="link-dark rounded">VP9</a></li>
+							<li><a href="av1" class="link-dark rounded">AV1</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+						Other Encoding
+						</button>
+						<div class="collapse" id="dashboard-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="audio" class="link-dark rounded">Audio</a></li>
+							<li><a href="subtitle" class="link-dark rounded">Subtitles</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+						Filters
+						</button>
+						<div class="collapse show" id="orders-collapse">
+						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+							<li><a href="interpolation" class="link-dark rounded">Interpolation</a></li>
+							<li><a href="upscale" class="link-dark rounded">Upscaling</a></li>
+							<li><a href="colors" class="link-dark rounded">Color Converter</a></li>
+							<li><a href="antialias" class="link-dark rounded">Anti Aliasing</a></li>
+							<li><a href="ffmpeg" class="link-dark rounded">FFMpeg</a></li>
+						</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/EncodeGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1"><strong>FrameGUI (v2.2.0)</strong></li>
+					<li class="mb-1">
+						<a href="fgui">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Usage
+						</button>
+						</a>
+					</li>
+					<li class="mb-1">
+						<a href="https://github.com/DaGooseYT/FrameGUI">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Source Code
+						</button>
+						</a>
+					</li>
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+						<a href="../support">
+						<button class="btn btn-toggle align-items-center rounded collapsed shadow-none" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+						Troubleshooting
+						</button>
+						</a>
+					</li>
+					</ul>
+					</div>
+				</div>
+            <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+				<h1 class="fw-bolder text-center my-5">Frame Interpolation</h1>
+				<div class="my-5" style="position: relative; display: block; padding: 0; overflow: hidden; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/zHbCbUEm-Vg" style="height: 100%; width: 100%; position: absolute;"></iframe><br /></div>
+				<p class="fw-normal text-black mb-0">Video frame interpolation is supported through RIFE (CUDA / NCNN), SVPFlow (OpenCL), and an exclusive method called EncodeGUI AI (CUDA / NCNN). It is recommended that ALL users use EncodeGUI AI because it consists of the most features and has the best interpolation quality. In order to use all of the interpolation filters effectively (~5fps encoding speed w/ 720p video), your system must meet or exceed the specifications stated below:</p><br />
+				<div class="row" style="margin: 0 auto;">
+					<table class="table table-bordered text-center mx-auto w-auto" style="display: block; overflow-x: auto; white-space: nowrap;">
+						<thead>
+						<tr>
+							<th scope="col">CPU</th>
+							<th scope="col">GPU</th>
+							<th class="px-3" scope="col">Storage Type</th>
+							<th class="px-3" scope="col">RAM</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="px-3">Intel: i3-4790<br />AMD: 2500X</td>
+							<td class="px-3">Nvidia: GT 1030<br />AMD: RX 590<br />Intel: Xe Graphics</td>
+							<td>SSD</td>
+							<td>8GB</td>
+						</tr>
+						</tbody>
+						<caption>Any hardware that is newer than the hardware listed above is<br />highly recommended to use.</caption>
+					</table>
+				</div><br />
+				<h3 class="fw-bolder text-center my-3">How to Use</h3><br />
+				<h5 class="text-center"><strong>Selecting a Tool</strong></h5>
+					<p class="fw-normal text-black mb-0">
+                		<p class="fw-normal text-black text-center"><img src="refs/toolinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+						<strong>EncodeGUI AI:</strong><br /> As mentioned previously, this is the recommended frame interpolation method to use. It combines SVPFlow and RIFE to allow non-integral interpolation multiplication factors (such as 24fps -> 60fps) while still using the high quality AI interpolation. The frame rendering speed in EncodeGUI AI can be up to 20% faster than the RIFE counterpart.<br /><br />
+						<strong>RIFE:</strong><br /> It's the next best alternative to EncodeGUI AI. RIFE is also AI-based and is known as one of the best AI interpolation tools due to it's speed and high quality interpolation method. While RIFE can support non-integral interpolation, it is not as good as EncodeGUI AI at times.<br /><br />
+						<strong>SVPFlow:</strong><br /> This interpolation tool is based off the popular SVP interpolation app. SVPFlow is common as it is a very fast interpolation tool and is decent quality. However, the interpolation quality using SVPFlow isn't near as good as EncodeGUI AI or RIFE. It is only ideal to use SVPFlow if you have a low specification computer.<br /><br /><br />
+					</p>
+					<h5 class="text-center"><strong>Selecting a Graphics Backend</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/backendinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					Select one of the graphic backends in the list. Your selection will largely depend on what your GPU supports.<br /><br />
+					<strong>CUDA:</strong><br /> This is the recommended backend to use. The CUDA backend is supported on both EncodeGUI AI and RIFE. CUDA is only supported on modern Nvidia GPUs and it is highly recommended that you use an Nvidia RTX GPU as the Tensor AI cores can be taken advantage of for faster interpolation.<br /><br />
+					<strong>Vulkan (NCNN):</strong><br /> This backend is the next best option to use, especially if you don't have an Nvidia GPU or your GPU doesn't support modern revisions of CUDA. In order to use this tool, your GPU must support the Vulkan graphics API. NCNN is supported for both EncodeGUI AI and RIFE. It can be twice as slow as the CUDA counterpart but can allow a higher quality interpolation on the basis of what AI model you select.<br /><br />
+					<div class="alert alert-warning" role="alert"><strong>Note:</strong> Please refrain from asking the developer which graphics backend you should use or if your GPU supports X backend. We don't know as every GPU is different and everyone's needs are also different. Please research any questions you have regarding your GPU for answers first before seeking help from the EncodeGUI developer.</div><br /><br />
+					<h5 class="text-center"><strong>Selecting a GPU Device</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/gpuinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					This section allows you to set the GPU device you'd like to use for interpolation. Keep in mind the compatiliblity of each graphics backend for each GPU (Ex: CUDA only supports Nvidia GPUs). Scroll up for more details.<br /><br /><br />
+					<h5 class="text-center"><strong>Selecting GPU Thread Count (NCNN Only)</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/threadinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					In the highlighted section above, you can select the number of GPU threads that you want the interpolation tool to use. An all around good value is <code>2</code> threads. <strong>More threads may not make the process faster and can throw errors if too many threads are being used</strong>.<br /><br /><br />
+					<h5 class="text-center"><strong>Selecting an AI Model</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/modelinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					Below are the details for each AI model. Regardless of what model you choose, there should be a comparable amount of smoothness for each. Note that the models in RIFE are represented differently than what's in the photo above.<br /><br />
+					<strong>Fastest (EncodeGUI AI):</strong> As the name says, this is the fastest model for interpolation but may not be the highest quality as the <code>Slow</code> model.<br /><br />
+					<strong>Fast (EncodeGUI AI):</strong> This model is almost like a combination of the <code>Fastest</code> and <code>Slow</code> models. It is nearly as fast as the <code>Fastest</code> model, but can have less noticeable artefacts at times.<br /><br />
+					<strong>Slow (EncodeGUI AI):</strong> This model is, well, slow. However, it produces the least amount of artefacts than any other model in EncodeGUI AI. <strong>Use this model if your video has a lot of patterns - there are little to no pattern artefacts when using this model.</strong><br /><br />
+					<strong>v4.6 (RIFE):</strong> This model is extreamly fast and is also very high quality. Use this model for most videos. However, it will still suffer from pattern artefacts.<br /><br />
+					<strong>v4.0 (RIFE):</strong> Very similar to model <code>v4.6</code> but not as fast.<br /><br />
+					<strong>v3.1 (RIFE):</strong> This model is fast and decent in terms of quality. However, there are better options for quality. Only use this model if the other models give you problems.<br /><br />
+					<strong>v2.4 (RIFE):</strong> This model is also fast but has much better artefact control than model <code>v3.1</code>. This is the recommended option for its balance between speed and interpolation quality.<br /><br />
+					<strong>v2.3 (RIFE):</strong> This model is regarded as the best for low artefacting, while still maintaining a smooth video.<br /><br />
+					<strong>v1.8 (RIFE):</strong> This model is the slowest out of the total RIFE models, but is the highest quality giving the least amount of artefacting.<br /><br /><br />
+					<h5 class="text-center"><strong>Using Scene Change Detection</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/scinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					Scene change detection allows the encoder to find scene changes in the video and remove them temporarily while interpolating to help prevent frame-morphing artefacts on scene changes. Unless your video doesn't have scene cuts, it is always recommended to have this feature enabled. You can override the default scene change detection threshold value by adjusting the value in the number box below. It is ideal to change this value as it will help prevent a choppy interpolated video particularly on scenes with a lot of moving objects. Set the scene change detection threshold override value to <code>0.14</code> or <code>0.15</code> for videos with a lot of motion or moving objects. Also be aware that increasing the scene change threshold value will make the encoder less aware of actual scene changes which could lead to more scene change artefacts.<br /><br />
+					<h5 class="text-center"><strong>Overriding Parameters (SVPFlow Only)</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/params.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					By selecting the highlighted checkbox above, you can overwrite the application's SVPFlow parameters by providing ones of your own. See the SVPFlow documentation <a href="https://www.svp-team.com/wiki/Manual:SVPflow">here</a> for more details about the params.<br /><br /><br />
+					<h5 class="text-center"><strong>Shader (SVPFlow Only)</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/shader.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					The idea behind the shader is nearly equivalent to models in the AI interpolation tools. The recommended option is <code>13</code> as it provides the best balance between halos, artefacts, and smoothness. See the SVPFlow documentation <a href="https://www.svp-team.com/wiki/Manual:SVPflow">here</a> for more details.<br /><br /><br />
+					<h5 class="text-center"><strong>Interpolation Mode (SVPFlow Only)</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/modeinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					This option allows you set the mode of the inteprolation process. For the most smooth video, select <code>Uniform</code> and for the best balance of artefacts to smoothness, select <code>Auto</code>. Once again, you'll want to see the SVPFlow documentation <a href="https://www.svp-team.com/wiki/Manual:SVPflow">here</a> for more details on the options.<br /><br /><br />
+					<h5 class="text-center"><strong>Artefact Masking (SVPFlow Only)</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/mask.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					Artefact masking refers to the process of hiding or removing artefacts in a video. Be careful with this option as it can greatly affect the smoothness of the interpolated video. Select <code>Off</code> for the most smoothness and artefacts, and select <code>High</code> for the least smoothness but also the least artefacts.<br /><br /><br />
+					<h5 class="text-center"><strong>Selecting the Output FPS</strong></h5>
+					<p class="fw-normal text-black text-center"><img src="refs/fpsinterp.png" class="img-fluid d-inline-block align-middle mr-2 my-3" style="max-height: 350;" alt="..."></img><br /></p>
+					Finally is to set the output FPS for the interpolated video. <br /><br />For EncodeGUI AI, the output FPS must be between <code>1.25x</code> and <code>10x</code> the source FPS, with a maximum cap at 800fps. <br /><br />RIFE uses a multiplier to specify the output FPS. This value can be anywhere between <code>2x</code> and <code>10x</code> the source FPS (RIFE NCNN is locked at <code>2x</code>), with a maximum cap at 800fps. <br /><br />SVPFlow is different, where you can either downsample or upsample the output FPS to any frame rate between 5fps and 800fps.<br /><br /><br />
+				</div>
+			</div>
+        </main>
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; <a class="link-light" href="https://dagooseyt.com">DaGoose</a> 2022-2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="privacy-terms">Privacy / Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="support">Support</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
